@@ -1,0 +1,59 @@
+General
+Ladies
+High Official
+Defence
+Defence
+Parliament House
+Foreign Tourist
+Duty Pass
+Tatkal
+Premium Tatkal
+Senior Citizen
+Physically Handicapped
+Handicapped
+Railway Employee
+GNRS
+Out Station
+Pooled
+Road Side
+Lower Berth
+Yuva
+RAC
+General Quota
+Ladies Quota
+High Official Quota
+Defence Quota
+Defense Quota
+Parliament House Quota
+Foreign Tourist Quota
+Duty Pass Quota
+Tatkal Quota
+Premium Tatkal Quota
+Senior Citizen Quota
+Physically Handicapped Quota
+Handicapped Quota
+Railway Employee Quota
+GNRS Quota
+Out Station Quota
+Pooled Quota
+Road Side Quota
+Lower Berth Quota
+Yuva Quota
+RAC Quota
+GN
+LD
+HO
+PH
+FT
+DP
+DF
+TQ
+PT
+SS
+HP
+RE
+OS
+PQ
+RS
+YU
+LB

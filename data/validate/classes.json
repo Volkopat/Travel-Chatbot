@@ -1,0 +1,35 @@
+{
+  "class": [
+    {
+      "AC First Class": "1A",
+      "AC First-Class": "1A",
+      "AC 1st Class": "1A",
+      "1AC": "1A",
+      "1A": "1A",
+      "AC Two Tier": "2A",
+      "AC Two-Tier": "2A",
+      "AC 2nd Tier": "2A",
+      "AC 2 Tier": "2A",
+      "2AC": "2A",
+      "2A": "2A",
+      "AC Three Tier": "3A",
+      "AC Three-Tier": "3A",
+      "AC 3rd Tier": "3A",
+      "AC 3 Tier": "3A",
+      "3AC": "3A",
+      "3A": "3A",
+      "Executive Chair Car": "EC",
+      "EC": "EC",
+      "AC Chair Car": "CC",
+      "Chair Car": "CC",
+      "CC": "CC",
+      "First Class": "FC",
+      "FC": "FC",
+      "Sleeper Class": "SL",
+      "Sleeper": "SL",
+      "SL": "SL",
+      "AC Economy": "3E",
+      "3E": "3E"
+    }
+]
+}
