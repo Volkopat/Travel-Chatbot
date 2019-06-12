@@ -1,0 +1,127 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "train_date",
+        "train_number",
+        "station_code",
+        "pnr_number",
+        "city"
+      ]
+    },
+    "action_trains_route": {
+      "slots": [
+        "requested_slot",
+        "train_number"
+      ]
+    },
+    "action_slot_reset": {
+      "slots": []
+    },
+    "action_chat_restart": {
+      "slots": []
+    },
+    "action_trains_fare": {
+      "slots": [
+        "train_date",
+        "destination_station_name",
+        "quota_code",
+        "requested_slot",
+        "train_number",
+        "source_station_name",
+        "class_code",
+        "age"
+      ]
+    },
+    "action_hotels_search": {
+      "slots": [
+        "city",
+        "requested_slot"
+      ]
+    },
+    "action_trains_pnr": {
+      "slots": [
+        "pnr_number",
+        "requested_slot"
+      ]
+    },
+    "action_trains_station_name": {
+      "slots": [
+        "requested_slot",
+        "station_code"
+      ]
+    },
+    "action_trains_reschedule": {
+      "slots": [
+        "train_date",
+        "requested_slot"
+      ]
+    },
+    "action_trains_station_code": {
+      "slots": [
+        "city",
+        "requested_slot"
+      ]
+    },
+    "action_trains_cancel": {
+      "slots": [
+        "train_date",
+        "requested_slot"
+      ]
+    },
+    "action_trains_station": {
+      "slots": [
+        "train_date",
+        "destination_station_name",
+        "source_station_name",
+        "requested_slot"
+      ]
+    },
+    "action_trains_seat": {
+      "slots": [
+        "train_date",
+        "destination_station_name",
+        "quota_code",
+        "requested_slot",
+        "train_number",
+        "source_station_name",
+        "class_code"
+      ]
+    },
+    "action_flight_search": {
+      "slots": [
+        "destination_airport",
+        "requested_slot",
+        "seating_class",
+        "flight_date",
+        "source_airport",
+        "no_of_infants",
+        "city",
+        "no_of_children",
+        "no_of_adults"
+      ]
+    },
+    "action_trains_live": {
+      "slots": [
+        "train_date",
+        "source_station_name",
+        "train_number",
+        "requested_slot"
+      ]
+    }
+  },
+  "rasa_core": "0.12.4",
+  "python": "3.6.8",
+  "max_histories": [
+    5,
+    3,
+    2
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.form_policy.FormPolicy"
+  ],
+  "trained_at": "20190612-115111"
+}
