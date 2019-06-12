@@ -1,0 +1,275 @@
+%YAML 1.1
+---
+actions:
+- utter_ask_train_date
+- utter_ask_no_of_infants
+- utter_ask_flight_date
+- utter_ask_pnr_number
+- utter_ask_seating_class
+- utter_ask_no_of_children
+- utter_wrong_train_date
+- utter_wrong_quota_code
+- action_flight_class_info
+- utter_ask_train_number
+- utter_ask_city
+- utter_goodbye
+- utter_wrong_class_code
+- utter_ask_source_station_name
+- utter_ask_quota_code
+- utter_ask_source_airport
+- utter_wrong_seating_class
+- utter_wrong_no_of_people
+- utter_ask_age
+- utter_ask_class_code
+- action_trains_quota_info
+- utter_ask_no_of_adults
+- utter_wrong_train_number
+- utter_wrong_station_code
+- utter_wrong_station_name
+- utter_ask_station_code
+- utter_wrong_city
+- action_chat_restart
+- utter_ask_destination_airport
+- action_trains_class_info
+- utter_ask_destination_station_name
+- utter_wrong_pnr_number
+- action_slot_reset
+- utter_greet
+- utter_wrong_age
+entities:
+- station_code
+- age
+- train_date
+- station_name
+- pnr_number
+- class_code
+- train_number
+- city
+- flight_date
+- no_of_people
+- greet
+- goodbye
+- seating_class
+- quota_code
+forms:
+- action_trains_reschedule
+- action_flight_search
+- action_trains_seat
+- action_trains_station_name
+- action_trains_cancel
+- action_trains_station
+- action_trains_live
+- action_trains_route
+- action_trains_pnr
+- action_hotels_search
+- action_trains_fare
+- action_trains_station_code
+intents:
+- enquire_pnr
+- greet
+- goodbye
+- inform_pnr
+- enquire_hotel_details
+- enquire_train_route
+- inform_train_number
+- inform_train_date
+- enquire_train_cancel
+- inform_flight_date
+- inform_city
+- inform_destination_airport
+- inform_no_of_adults
+- inform_no_of_infants
+- inform_seating_class
+- enquire_flight_details
+- inform_no_of_children
+- enquire_flight_class_info
+- enquire_train_quota_info
+- enquire_trains_class_info
+- inform_destination_station_name
+- inform_source_station_name
+- inform_quota_code
+- enquire_train_seat
+- inform_class_code
+- enquire_train_fare
+- inform_age
+- inform_station_code
+- enquire_train_station_name
+- enquire_train_reschedule
+- enquire_train_station_code
+- enquire_live_status
+- enquire_train_station
+- inform_source_airport
+slots:
+  age:
+    max_value: 100.0
+    min_value: 1.0
+    type: float
+  city:
+    type: text
+  class_code:
+    type: text
+  destination_airport:
+    type: text
+  destination_station_name:
+    type: text
+  flight_date:
+    type: text
+  no_of_adults:
+    max_value: 9.0
+    min_value: 1.0
+    type: float
+  no_of_children:
+    max_value: 9.0
+    min_value: 0.0
+    type: float
+  no_of_infants:
+    max_value: 9.0
+    min_value: 0.0
+    type: float
+  pnr_number:
+    max_value: 9999999999.0
+    min_value: 1000000000.0
+    type: float
+  quota_code:
+    type: text
+  requested_slot:
+    type: unfeaturized
+  seating_class:
+    type: text
+  source_airport:
+    type: text
+  source_station_name:
+    type: text
+  station_code:
+    type: text
+  train_date:
+    type: text
+  train_number:
+    max_value: 99999.0
+    min_value: 10000.0
+    type: float
+templates:
+  utter_ask_age:
+  - text: Tell me your age.
+  - text: May I ask how old are you?
+  - text: How old are you?
+  - text: I need to know your age.
+  utter_ask_city:
+  - text: Tell me the City name?
+  - text: I need to know the city
+  - text: May I know the city?
+  utter_ask_class_code:
+  - text: Tell me the class code.
+  - text: Please mention the class code.
+  - text: What is the class code?
+  utter_ask_destination_airport:
+  - text: Tell me the destination city.
+  - text: I need to know the destination.
+  - text: May I know the destination city?
+  utter_ask_destination_station_name:
+  - text: Tell me the destination station name?
+  - text: I need the destination station name.
+  - text: May I know the destination station name?
+  utter_ask_flight_date:
+  - text: What date is it? Format:YYYYMMDD
+  - text: Please mention the date? Format:YYYYMMDD
+  - text: Give me the date in YYYYMMDD format.
+  - text: I would like to know the date please. Format:YYYYMMDD
+  utter_ask_no_of_adults:
+  - text: Tell me the number of adults travelling.
+  - text: How many adults?
+  - text: Number of adults please.
+  utter_ask_no_of_children:
+  - text: Tell me the number of children travelling.
+  - text: How many children?
+  - text: Number of children please.
+  utter_ask_no_of_infants:
+  - text: Tell me the number of infants travelling.
+  - text: How many infants?
+  - text: Number of infants please.
+  utter_ask_pnr_number:
+  - text: What is your PNR Number?
+  - text: Tell me your PNR Number
+  - text: May I know your PNR Number?
+  utter_ask_quota_code:
+  - text: Tell me the quota code.
+  - text: Please mention the quota code.
+  - text: What is the quota code?
+  utter_ask_seating_class:
+  - text: May I know which class you want to travel in? (E->Economy or B->Business)
+  - text: I need to know the seating class. (E->Economy or B->Business)
+  - text: May I know the class? (E->Economy or B->Business)
+  utter_ask_source_airport:
+  - text: Tell me the source city.
+  - text: I need to know the source.
+  - text: May I know the source city?
+  utter_ask_source_station_name:
+  - text: Tell me the source station name?
+  - text: I need  source station name
+  - text: May I know the source station name?
+  utter_ask_station_code:
+  - text: Tell me the station code?
+  - text: I need the 3-4 letter station code.
+  - text: May I know the station code?
+  utter_ask_train_date:
+  - text: What date is it? Format:DD-MM-YYYY
+  - text: Please mention the date? Format:DD-MM-YYYY
+  - text: Give me the date in DD-MM-YYYY format.
+  - text: I would like to know the date please. Format:DD-MM-YYYY
+  utter_ask_train_number:
+  - text: What is the Train Number?
+  - text: Tell me the Train Number
+  - text: May I know the Train Number?
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye bye :(
+  - text: Okay take care!
+  - text: See you!
+  utter_greet:
+  - text: Hello! How can I help?
+  - text: How may I assist you?
+  - text: Welcome!
+  utter_wrong_age:
+  - text: Sorry! Age is not correct!
+  - text: Thats not a valid age! Please tell me your age?
+  - text: Your age is incorrect!
+  utter_wrong_city:
+  - text: The city you entered is incorrect!
+  - text: Sorry! Did not understand which city!
+  - text: Please give me the correct city?
+  utter_wrong_class_code:
+  - text: Sorry! Class Code is not correct!
+  - text: Thats not a valid Class Code! Please tell me your Class Code?
+  - text: Your Class Code is incorrect!
+  utter_wrong_no_of_people:
+  - text: The number of people you entered is incorrect!
+  - text: Sorry! Did not understand how many number of people!
+  - text: Please give me the correct number of people?
+  utter_wrong_pnr_number:
+  - text: The pnr_number you entered is incorrect!
+  - text: Sorry! Did not understand pnr number!
+  - text: Please give me the correct pnr number?
+  utter_wrong_quota_code:
+  - text: Sorry! Quota Code is not correct!
+  - text: Thats not a valid Quota Code! Please tell me your Quota Code?
+  - text: Your Quota Code is incorrect!
+  utter_wrong_seating_class:
+  - text: The seating class you entered is incorrect!  (E->Economy or B->Business)
+  - text: Sorry! Did not understand seating class!  (E->Economy or B->Business)
+  - text: Please give me the correct seating class?  (E->Economy or B->Business)
+  utter_wrong_station_code:
+  - text: The station code you entered is incorrect!
+  - text: Sorry! Did not understand station code!
+  - text: Please give me the correct station code?
+  utter_wrong_station_name:
+  - text: The station you entered is incorrect!
+  - text: Sorry! Did not understand which station!
+  - text: Please give me the correct station?
+  utter_wrong_train_date:
+  - text: The train date you entered is incorrect!
+  - text: Sorry! Invalid train date!
+  - text: Please give me the correct train date?
+  utter_wrong_train_number:
+  - text: The train number you entered is incorrect!
+  - text: Sorry! Did not understand train number!
+  - text: Please give me the correct train number?

@@ -1,0 +1,29 @@
+digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+1 [class="", fontsize=12, label=utter_greet];
+2 [class="", fontsize=12, label=utter_ask_train_number];
+"-4" [class=ellipsis, label="..."];
+15 [class="", fontsize=12, label=action_trains_live];
+"-17" [class=ellipsis, label="..."];
+16 [class="", fontsize=12, label=action_trains_pnr];
+"-18" [class=ellipsis, label="..."];
+"-29" [class=ellipsis, label="..."];
+28 [class="intent dashed active", label="  ?  ", shape=rect];
+29 [class=intent, fillcolor=lightblue, label="greetgreet Hey bot", shape=rect, style=filled];
+30 [class=intent, fillcolor=lightblue, label=enquire_live_status, shape=rect, style=filled];
+31 [class=intent, fillcolor=lightblue, label="inform_train_numbertrain_number 12431 station_code BSR train_date 17-02-2019", shape=rect, style=filled];
+32 [class=intent, fillcolor=lightblue, label="inform_pnrpnr_number 44444", shape=rect, style=filled];
+0 -> 28  [class=active, key=NONE, label=""];
+0 -> 29  [class="", key=0];
+0 -> 30  [class="", key=0];
+0 -> 31  [class="", key=0];
+0 -> 32  [class="", key=0];
+1 -> "-29"  [class="", key=NONE, label=""];
+2 -> "-4"  [class="", key=NONE, label=""];
+15 -> "-17"  [class="", key=NONE, label=""];
+16 -> "-18"  [class="", key=NONE, label=""];
+29 -> 1  [class="", key=0];
+30 -> 2  [class="", key=0];
+31 -> 15  [class="", key=0];
+32 -> 16  [class="", key=0];
+}
