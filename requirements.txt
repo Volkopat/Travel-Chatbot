@@ -16,7 +16,7 @@ sklearn-crfsuite==0.3.6
 jsonpickle==1.0.0
 redis==2.10.6
 fakeredis==0.10.3
-numpy==1.16.0
+numpy==1.22.0
 scipy==1.2.0
 typing==3.6.6
 ruamel.yaml==0.15.85
